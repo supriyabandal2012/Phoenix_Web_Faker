@@ -1,0 +1,33 @@
+<div class="bg-blue-400 text-blue p-10 w-1/1 h-500 text-3xl text-center my-box border border-black border-solid border-2 mb-10">
+  Pet Store Manager
+</div>
+
+<head>
+  <title>Pet Directory</title>
+</head>
+<body>
+  Pet Directory
+</body>
+
+<table class="border-spacing-4 border border-slate-500">
+  <thead class="text-left text-[1.2rem] leading-6 text-zinc-900 table-auto">
+    <tr>
+      <th class="border border-slate-500">Name</th>
+      <th class="border border-slate-500">Species</th>
+      <th class="border border-slate-500">Breed</th>
+      <th class="border border-slate-500">Owner</th>
+      <th class="border border-slate-500">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for pet <- @pets do %>
+      <tr>
+        <td class="border border-slate-500"><%= pet.name %></td>
+        <td class="border border-slate-500"><%= pet.species %></td>
+        <td class="border border-slate-500"><%= pet.breed %></td>
+        <td class="border border-slate-500"><%= pet.owner %></td>
+        <td class="border border-slate-500"><%= pet.age %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
