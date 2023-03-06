@@ -1,5 +1,18 @@
 # PetStoreManager
 @Author: Supriya Bandal
+* Create a Phoenix application called "pet_store_manager"
+
+Use the phx.gen.html generator to create the context Customers with data type Pet that has these fields:
+name
+species
+breed
+owner's last name
+age (float)
+Make the necessary modifications so that
+breed is optional
+name must be no shorter than 3 or longer than 20 characters
+
+
 To create a project:
   * Run `mix phx.new pet_store_manager` to create a project called pet_store_manager.
 
